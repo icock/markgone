@@ -1,0 +1,47 @@
+MarkGone is a minimal markup language based on godoc.
+
+MarkGone uses the minimal formatting syntax from godoc.
+Unlike godoc, MarkGone processes plain text, not comments in go source code;
+
+Philosophy
+
+Markups are gone.
+In other words, MarkGone text just looks like plain text.
+
+Formatting Syntax
+
+A heading is a single line
+followed by another paragraph,
+beginning with a capital letter,
+and containing no punctuation.
+
+Paragraphs are separated by one or more blank lines.
+
+    To produce a pre-formatted blocks,
+    simply indent every line of the block.
+    Common indent prefix will be removed in output.
+
+http://example.com/urls_are_auto-linked
+
+Source Code HighLight
+
+MarkGone does not highlight pre-formatted blocks.
+The highlighting can be done via JavaScript.
+For example, with highlight.js:
+
+	<link rel="stylesheet" href="/path/to/styles/default.css">
+	<script src="/path/to/highlight.pack.js"></script>
+	<script>
+	document.addEventListener('load', () => {
+		hljs.configure({languages: ["go", "c", "scheme", "java", "js", "html", "css"]});
+		const codes = document.querySelectorAll('pre');
+		codes.forEach((code) => { hljs.highlightBlock(code); });
+	});
+	</script>
+
+Extensions
+
+If the first line is a single line, i.e. followed by a blank line,
+then MarkGone uses it as the title.
+
+Tags: space-separated tags on last line following at least one blank-line
