@@ -1,0 +1,25 @@
+/* This code is dedicated to the Public Domain. */
+
+body {
+    line-height: 1.5;
+    font-family: monospace;
+    background-color: black;
+    color: green;
+}
+
+h1, h2, h3, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+pre {
+    font-family: monospace;
+    tab-size: 4;
+    margin-left: 2ch;
+}
+
+a {
+    font-family: inherit;
+    color: inherit;
+    text-decoration: underline;
+}

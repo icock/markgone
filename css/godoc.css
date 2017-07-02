@@ -1,0 +1,68 @@
+/* This code is dedicated to the Public Domain. */
+
+body {
+    margin: 0;
+	font-family: Arial, sans-serif;
+    background-color: white;
+    color: #222;
+    line-height: 1.3rem;
+}
+
+p {
+	max-width: 800px;
+	word-wrap: break-word;
+    margin: 1.25rem;
+}
+
+pre {
+    font-family: Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.4em;
+    overflow-x: auto;
+    tab-size: 4;
+    background: #EFEFEF;
+    padding: 0.625rem;
+    border-radius: 0.3rem;
+}
+
+h1, h2, h3 {
+    margin: 1.25rem 0 1.25rem;
+	padding: 0;
+	color: #375EAB;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 1.75rem;
+	line-height: 1;
+}
+h2 {
+	font-size: 1.25rem;
+	background: #E0EBF5;
+	padding: 0.5rem;
+	line-height: 1.25;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin: 1.25rem 0.3rem;
+}
+
+a {
+    font-family: inherit;
+    color: #375EAB; /* the color used by golang.org */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media print {
+	pre {
+		background: white;
+		border: 1px solid #BBB;
+		white-space: pre-wrap;
+	}
+}

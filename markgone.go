@@ -42,6 +42,32 @@ For example, with highlight.js:
 	});
 	</script>
 
+CSS
+
+Since markgone only uses four HTML elements
+
+	h2, h3, p, pre
+
+customizing css style for it is simple.
+
+Sample css files are provided in the css directory of source code repository:
+
+	[]struct{
+		filename string;
+		description string;
+	}{
+		{"godoc.css":
+			"mimic godoc style"},
+		{"plain/blue-link":
+			"mimic plain text with colored links"},
+		{"plain/underline-link":
+			"mimic plain text with underlined links"},
+		{"plain/white-on-black":
+			"mimic a console"},
+		{"plain/green-on-black":
+			"mimic a console with green text"},
+	}
+
 Extensions
 
 If the first line is a single line, i.e. followed by a blank line,
